@@ -1,6 +1,5 @@
 # Head_heatmap
 - Object Detection을 사용하여 매장 내 히트맵 생성 
-- 히트맵을 2D로 투시
 
 # Summary
 기존 CCTV 혹은 추가로 설치된 카메라를 활용하여 소비자들의 동선을 Heat map으로 표현한다.
@@ -23,7 +22,7 @@
 1.Videos에 영상을 넣고 다음을 실행한다.
 
 ```bash
-python3 detect.py --weights crowdhuman_yolov5m.pt --heads
+python3 detect.py --weights crowdhuman_yolov5m.pt --source Videos/ --view-img  --heads
 ```
 
 
