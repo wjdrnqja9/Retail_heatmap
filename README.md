@@ -10,7 +10,7 @@
 처리 속도가 빨라 장시간 녹화된 영상에 적합하다.
 개개인을 추적하는 용도가 아닌 전체적인 동선 분포를 파악하기 위함이기 때문에 약간의 오탐률은 감수 가능하다.
 
-#구현 방법
+# 구현 방법
 영상의 일정 프레임마다 사람 머리의 좌표값을 기록하고, 좌표값을 바탕으로 히트맵을 작성한다.
 좌표값을 기록할 때 시간(프레임)을 함께 기록하여 시간별 분석도 가능하다.
 
@@ -18,9 +18,19 @@
 - 머리를 추적하기 때문에 물체에 가려진 사람의 이동도 탐지할 수 있음.
 - 하나의 단안 카메라로 작동하기 때문에 범용적이고 경제적이지만, 정확한 좌표를 출력하는 것은 어려움. 
 
+## 사용 방법
 
-## Test (Only Heads)
+1.Videos에 영상을 넣고 다음을 실행한다.
 
 ```bash
-python3 detect.py --weights crowdhuman_yolov5m.pt --source _test/ --view-img  --heads
+python3 detect.py --weights crowdhuman_yolov5m.pt --heads
 ```
+
+
+# 결과 
+
+
+
+# 참조
+- https://github.com/ultralytics/yolov5
+- https://github.com/deepakcrk/yolov5-crowdhuman
