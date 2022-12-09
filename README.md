@@ -1,4 +1,4 @@
-# Head_detection_heatmap
+# Head_heatmap
 - Object Detection을 사용하여 매장 내 히트맵 생성 
 - 히트맵을 2D로 투시
 
