@@ -25,6 +25,21 @@
 python3 detect.py --weights crowdhuman_yolov5m.pt --source Videos/ --view-img  --heads
 ```
 
+2.  실행 후 runs\detect\exp에 저장된 파일의 경로로 heatmap.py 파일의 videopath, labelpath를 설정한다.
+
+
+3. 터미널에서 heatmap.py파일을 실행한다.
+
+```bash
+python3 heatmap.py
+```
+
+
+2-1. 점원이 카메라에 나오지 않는 경우
+
+2-2. 점원이 카메라에 나오는 경우
+
+
 
 # 결과 
 
