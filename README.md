@@ -3,6 +3,7 @@
 
 # Summary
 기존 CCTV 혹은 추가로 설치된 카메라를 활용하여 소비자들의 동선을 Heat map으로 표현한다.
+
 소비자 트래픽이 높은 지역과 그렇지 못한 콜드스폿 을 파악하여 판매율 을 높이기 위한 플래노그램을 설정할수 있다. 
 
 # Object Detection Model : YOLOv5
