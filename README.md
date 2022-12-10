@@ -34,7 +34,7 @@ python3 detect.py --weights crowdhuman_yolov5m.pt --source Videos/ --view-img  -
 python3 heatmap.py
 ```
 
-
+4. heatmap.png 파일로 저장된다.
 
 
 # 결과 
