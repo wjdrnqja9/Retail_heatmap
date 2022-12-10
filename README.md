@@ -19,7 +19,7 @@
 
 ## 사용 방법
 
-1.Videos에 영상을 넣고 다음을 실행한다.
+1. Videos에 영상을 넣고 다음을 실행한다.
 
 ```bash
 python3 detect.py --weights crowdhuman_yolov5m.pt --source Videos/ --view-img  --heads
@@ -34,10 +34,6 @@ python3 detect.py --weights crowdhuman_yolov5m.pt --source Videos/ --view-img  -
 python3 heatmap.py
 ```
 
-
-2-1. 점원이 카메라에 나오지 않는 경우
-
-2-2. 점원이 카메라에 나오는 경우
 
 
 
