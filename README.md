@@ -50,7 +50,7 @@ python3 heatmap_remove.py
 ### 3. heatmap.png 파일로 저장된다.
 
 
-# 🌠 결과 
+# 🌟 결과 
 
 ## heatmap.py
 ![heatmap](https://user-images.githubusercontent.com/75363285/206843855-339b2816-62c0-41b1-9390-fe2c816dc43c.png)
