@@ -1,5 +1,6 @@
 # Head_heatmap
-- Object Detection을 사용하여 매장 내 동선 히트맵 생성 
+- Object Detection을 사용하여 매장 내 동선 히트맵 생성
+- 직원이 카메라에 나오는 경우 직원 제외 기능
 
 # Summary
 기존 CCTV 혹은 추가로 설치된 카메라를 활용하여 소비자들의 동선을 Heat map으로 표현한다.
@@ -22,23 +23,22 @@
 # 사용 방법
 
 
-##1. Videos 폴더에 영상을 넣고 다음을 실행한다.
-- Videos 폴더에 영상을 넣고 다음을 실행한다.
+## 1. Videos 폴더에 영상을 넣고 다음을 실행한다.
 
 ```bash
 python3 detect.py --weights crowdhuman_yolov5m.pt --source Videos/ --view-img  --heads
 ```
 
-##2. heatmap.py 파일의 videopath, labelpath를 설정한 후 실행한다. 
+## 2. heatmap.py 파일의 videopath, labelpath를 설정한 후 실행한다. 
 
 - labelpath -> detect.py 실행 후 runs\detect\exp에 저장된 txt 파일
 
 ```bash
 python3 heatmap.py
 ```
-## 직원이 카메라에 나오지 않을 때
+### 직원이 카메라에 나오지 않을 때
 
-##2 직원이 카메라에 나올 때
+### 직원이 카메라에 나올 때
 1. Videos에 영상을 넣고 다음을 실행한다.
 
 ```bash
