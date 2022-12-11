@@ -42,6 +42,11 @@ python3 heatmap.py
 
 ![heatmap](https://user-images.githubusercontent.com/75363285/206843855-339b2816-62c0-41b1-9390-fe2c816dc43c.png)
 
+![xywh](https://user-images.githubusercontent.com/75363285/206894532-78a7b4f8-5c7d-461a-99a6-89020c3d2a9e.png)
+
+![heatmap_remove](https://user-images.githubusercontent.com/75363285/206894664-371db902-dc09-426b-bdd5-e422024bc4db.png)
+
+
 # 참조
 - https://github.com/ultralytics/yolov5
 - https://github.com/deepakcrk/yolov5-crowdhuman
