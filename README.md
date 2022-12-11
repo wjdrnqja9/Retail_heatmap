@@ -29,20 +29,20 @@
 python3 detect.py --weights crowdhuman_yolov5m.pt --source Videos/ --view-img  --heads
 ```
 
-## 2. heatmap.py 파일의 videopath, labelpath를 설정한 후 실행한다. 
+## 2. 용도에 맞게 다음 파일의 videopath, labelpath를 설정한 후 실행한다. 
 
 - labelpath -> detect.py 실행 후 runs\detect\exp에 저장된 txt 파일
 
 ```bash
 python3 heatmap.py
 ```
-### 직원이 카메라에 나오지 않을 때
-
-### 직원이 카메라에 나올 때
-1. Videos에 영상을 넣고 다음을 실행한다.
-
+### - 직원이 카메라에 나오지 않을 때
 ```bash
-python3 detect.py --weights crowdhuman_yolov5m.pt --source Videos/ --view-img  --heads
+python3 heatmap.py
+```
+### - 직원이 카메라에 나올 때
+```bash
+python3 heatmap_remove.py
 ```
 
 2. heatmap_remove.py 파일의 videopath, labelpath를 설정한 후 실행한다. 
