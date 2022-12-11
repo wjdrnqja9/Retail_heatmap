@@ -10,8 +10,12 @@ import matplotlib.cm as cm
 videopath = 'Videos\HD_CCTV_retail_store.mp4'
 labelpath = 'runs\detect\exp\HD_CCTV_retail_store.txt'
 
-img = cv2.imread('background.png')
-x, y, w, h = cv2.selectROI('location', img, False)
+video = cv2.VideoCapture(videopath)
+a, image = video.read()
+cv2.imwrite('background.png', image)
+
+image = cv2.imread('background.png')
+x, y, w, h = cv2.selectROI('location', image, False)
 cv2.destroyAllWindows()
            
 
@@ -21,13 +25,9 @@ with open(labelpath, 'r', encoding='utf-8') as f:
     head_coord_rec = {i:[] for i in range(int(reader[-1][0]) + 1)}
     for row in reader:
         if int(row[1]) == 1:
-            if not (((x / img.shape[1])  < float(row[2]) < ((x + w) / img.shape[1])) and (((x + w) / img.shape[1]) < float(row[3]) < ((y + h) / img.shape[0]))):
+            if not (((x / image.shape[1])  < float(row[2]) < ((x + w) / image.shape[1])) and (((x + w) / image.shape[1]) < float(row[3]) < ((y + h) / image.shape[0]))):
                 head_coord_rec[int(row[0])].append((float(row[2]), float(row[3])))
 
-
-video = cv2.VideoCapture(videopath)
-a, image = video.read()
-cv2.imwrite('background.png', image)
 
 img = io.read_image('background.png')
 H = img.shape[1]
