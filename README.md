@@ -30,35 +30,32 @@ python3 detect.py --weights crowdhuman_yolov5m.pt --source Videos/ --view-img  -
 ```
 
 ## 2. 용도에 맞게 다음 파일의 videopath, labelpath를 설정한 후 실행한다. 
+labelpath는 detect.py 실행 후 runs\detect\exp에 저장된 txt 파일 경로
 
-- labelpath -> detect.py 실행 후 runs\detect\exp에 저장된 txt 파일
-
-```bash
-python3 heatmap.py
-```
 ### - 직원이 카메라에 나오지 않을 때
 ```bash
 python3 heatmap.py
 ```
+
 ### - 직원이 카메라에 나올 때
 ```bash
 python3 heatmap_remove.py
 ```
-
-2. heatmap_remove.py 파일의 videopath, labelpath를 설정한 후 실행한다. 
+창이 실행되면 아래 사진처럼 직원의 위치에 마우스를 드래그 후 Enter or space bar를 누른다.
 
 ![xywh](https://user-images.githubusercontent.com/75363285/206894532-78a7b4f8-5c7d-461a-99a6-89020c3d2a9e.png)
 
-창이 실행되면 위 
 
-3. heatmap.png 파일로 저장된다.
+
+## 3. heatmap.png 파일로 저장된다.
 
 
 # 결과 
 
+### heatmap.py
 ![heatmap](https://user-images.githubusercontent.com/75363285/206843855-339b2816-62c0-41b1-9390-fe2c816dc43c.png)
 
-
+### heatmap_remove.py
 ![heatmap_remove](https://user-images.githubusercontent.com/75363285/206894664-371db902-dc09-426b-bdd5-e422024bc4db.png)
 
 
