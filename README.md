@@ -15,28 +15,42 @@
 영상의 일정 프레임마다 사람 머리의 좌표값을 기록하고, 좌표값을 바탕으로 히트맵을 작성한다.
 좌표값을 기록할 때 시간(프레임)을 함께 기록하여 시간별 분석도 가능하다.
 
-#
+# 장점
 - 머리를 추적하기 때문에 물체에 가려진 사람의 이동도 탐지할 수 있음.
 - 하나의 단안 카메라로 작동하기 때문에 범용적이고 경제적이다.
 
-## 사용 방법
+# 사용 방법
 
+
+##1 
+Videos 폴더에 영상을 넣고 다음을 실행한다.
+- Videos 폴더에 영상을 넣고 다음을 실행한다.
+
+```bash
+python3 detect.py --weights crowdhuman_yolov5m.pt --source Videos/ --view-img  --heads
+```
+
+##2. heatmap.py 파일의 videopath, labelpath를 설정한 후 실행한다. 
+
+- labelpath -> detect.py 실행 후 runs\detect\exp에 저장된 txt 파일
+
+```bash
+python3 heatmap.py
+```
+## 직원이 카메라에 나오지 않을 때
+
+##2 직원이 카메라에 나올 때
 1. Videos에 영상을 넣고 다음을 실행한다.
 
 ```bash
 python3 detect.py --weights crowdhuman_yolov5m.pt --source Videos/ --view-img  --heads
 ```
 
-2. heatmap.py 파일의 videopath, labelpath를 설정한 후 실행한다. 
-
-- labelpath -> runs\detect\exp에 저장된 txt 파일
-
-```bash
-python3 heatmap.py
-```
+2. heatmap_remove.py 파일의 videopath, labelpath를 설정한 후 실행한다. 
 
 ![xywh](https://user-images.githubusercontent.com/75363285/206894532-78a7b4f8-5c7d-461a-99a6-89020c3d2a9e.png)
 
+창이 실행되면 위 
 
 3. heatmap.png 파일로 저장된다.
 
