@@ -1,4 +1,4 @@
-# :sun_with_face: Head_heatmap
+# ⭐: Head_heatmap
 
 - Object Detection을 사용하여 매장 내 동선 히트맵 생성
 
@@ -50,7 +50,7 @@ python3 heatmap_remove.py
 ### :three: heatmap.png 파일로 저장된다.
 
 
-# :full_moon_with_face: 결과 
+# 🌟: 결과 
 
 ## heatmap.py
 ![heatmap](https://user-images.githubusercontent.com/75363285/206843855-339b2816-62c0-41b1-9390-fe2c816dc43c.png)
