@@ -24,13 +24,13 @@
 
 # :zap: 사용 방법
 
-### :one: Videos 폴더에 영상을 넣고 다음을 실행한다.
+### 1. Videos 폴더에 영상을 넣고 다음을 실행한다.
 
 ```bash
 python3 detect.py --weights crowdhuman_yolov5m.pt --source Videos/ --view-img  --heads
 ```
 
-### :two: 용도에 맞게 다음 파일의 videopath, labelpath를 설정한 후 실행한다. 
+### 2. 용도에 맞게 다음 파일의 videopath, labelpath를 설정한 후 실행한다. 
 labelpath는 detect.py 실행 후 runs\detect\exp에 저장된 txt 파일 경로
 
 #### - 직원이 카메라에 나오지 않을 때
@@ -47,7 +47,7 @@ python3 heatmap_remove.py
 ![xywh](https://user-images.githubusercontent.com/75363285/206894532-78a7b4f8-5c7d-461a-99a6-89020c3d2a9e.png)
 
 
-### :three: heatmap.png 파일로 저장된다.
+### 3. heatmap.png 파일로 저장된다.
 
 
 # 🌟 결과 
