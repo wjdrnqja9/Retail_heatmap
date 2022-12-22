@@ -33,6 +33,7 @@ python3 detect.py --weights crowdhuman_yolov5m.pt --source Videos/ --view-img  -
 ### 2. 상황에 맞게 다음 파일의 videopath, labelpath를 설정한 후 실행한다. 
 labelpath는 detect.py 실행 후 runs\detect\exp에 저장된 txt 파일 경로
 
+
 #### - 직원이 카메라에 나오지 않을 때
 ```bash
 python3 heatmap.py
