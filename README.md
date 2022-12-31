@@ -24,7 +24,7 @@
 
 # :zap: 사용 방법
 
-### 1. requirements.txt를 설치
+### 1. requirements.txt 설치
 
 ```bash
 pip install -r requirements.txt
