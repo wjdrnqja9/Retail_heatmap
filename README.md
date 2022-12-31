@@ -24,13 +24,19 @@
 
 # :zap: 사용 방법
 
-### 1. Videos 폴더에 영상을 넣고 다음을 실행한다.
+### 1. requirements.txt를 설치
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Videos 폴더에 영상을 넣고 다음을 실행한다.
 
 ```bash
 python3 detect.py --weights crowdhuman_yolov5m.pt --source Videos/ --view-img  --heads
 ```
 
-### 2. 상황에 맞게 다음 파일의 videopath, labelpath를 설정한 후 실행한다. 
+### 3. 상황에 맞게 다음 파일의 videopath, labelpath를 설정한 후 실행한다. 
 labelpath는 detect.py 실행 후 runs\detect\exp에 저장된 txt 파일 경로
 
 
