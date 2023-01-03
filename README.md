@@ -1,4 +1,4 @@
-# ⭐ Head_heatmap
+# ⭐ Retail_heatmap
 
 - Object Detection을 사여하여 매장 내 동선 히트맵 생성
 
