@@ -68,4 +68,3 @@ python3 heatmap_remove.py
 
 # 참조
 - https://github.com/ultralytics/yolov5
-- https://github.com/deepakcrk/yolov5-crowdhuman
