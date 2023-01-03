@@ -1,6 +1,6 @@
 # ⭐ Retail_heatmap
 
-- Object Detection을 사여하여 매장 내 동선 히트맵 생성
+- Object Detection을 사용하여 매장 내 동선 히트맵 생성
 
 - 직원이 카메라에 나오는 경우 직원 동선 제외 기능
 
